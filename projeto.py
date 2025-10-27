@@ -6,44 +6,56 @@ import numpy as np  # type: ignore
 2: converter metros por segundo (m/s) para quilômetros por hora (km/h). 
 Qualquer opção diferente dessas será inválida. """
 
-def converter_velocidade():
-    print("\nConversão de Velocidade:")
-    print("1. Quilômetros por hora (km/h) para metros por segundo (m/s).")
-    print("2. Metros por segundo (m/s) para quilômetros por hora (km/h).")
-    escolha = int(input("Escolha a opção: "))
 
-    if escolha == 1:
-        valor = float(input("Digite o valor: "))
-        resultado = valor / 3.6
-        print(f"{valor} km/h = {resultado:.2f} m/s")
-    elif escolha == 2:
-        valor = float(input("Digite o valor: "))
-        resultado = valor * 3.6
-        print(f"{valor} m/s = {resultado:.2f} km/h")
-    else:
-        print("Opção inválida.")
-        
+def converter_velocidade():
+    teste3 = 0
+    while teste3 == 0:
+        print("Conversão de Velocidade:")
+        print("1. Quilômetros por hora (km/h) para metros por segundo (m/s).")
+        print("2. Metros por segundo (m/s) para quilômetros por hora (km/h).")
+        escolha = int(input("Escolha a opção: "))
+        print("")
+        if escolha == 1:
+            valor = float(input("Digite o valor: "))
+            resultado = valor / 3.6
+            print(f"{valor} km/h = {resultado:.2f} m/s\n")
+            teste3 = 1
+        elif escolha == 2:
+            valor = float(input("Digite o valor: "))
+            resultado = valor * 3.6
+            print(f"{valor} m/s = {resultado:.2f} km/h\n")
+            teste3 = 1
+        else:
+            print("Opção inválida. Tente novamente.\n")
+
+
 """ Se o usuário selecionar conversão de massa, poderá escolher:
 1: Converter quilograma (kg) para grama (g) ou
 2: Converter grama (g) para quilograma (kg).
 Qualquer opção diferente dessas será inválida. """
 
-def converter_massa():
-    print("\nConversão de Massa:")
-    print("1. Quilograma (kg) para grama (g).")
-    print("2. Grama (g) para quilograma (kg).")
-    escolha = int(input("Escolha a opção: "))
 
-    if escolha == 1:
-        valor = float(input("Digite o valor: "))
-        resultado = valor * 1000
-        print(f"{valor} kg = {resultado:.2f} g")
-    elif escolha == 2:
-        valor = float(input("Digite o valor: "))
-        resultado = valor / 1000
-        print(f"{valor} g = {resultado:.2f} kg")
-    else:
-        print("Opção inválida.")
+def converter_massa():
+    teste2 = 0
+    while teste2 == 0:
+        print("Conversão de Massa:")
+        print("1. Quilograma (kg) para grama (g).")
+        print("2. Grama (g) para quilograma (kg).")
+        escolha = int(input("Escolha a opção: "))
+        print("")
+        if escolha == 1:
+            valor = float(input("Digite o valor: "))
+            resultado = valor * 1000
+            print(f"{valor} kg = {resultado:.2f} g\n")
+            teste2 = 1
+        elif escolha == 2:
+            valor = float(input("Digite o valor: "))
+            resultado = valor / 1000
+            print(f"{valor} g = {resultado:.3f} kg\n")
+            teste2 = 1
+        else:
+            print("Opção inválida. Tente novamente.\n")
+
 
 """ Se o usuário selecionar conversão de comprimente, poderá escolher:
 1: Converter quilograma (kg) para grama (g);
@@ -52,32 +64,39 @@ def converter_massa():
 4: Converter quilômetros (km) para metros (m).
 Qualquer opção diferente dessas será inválida. """
 
-def converter_comprimento():
-    print("\nConversão de Comprimento:")
-    print("1. Metros (m) para centímetros (cm).")
-    print("2. Centímetros (cm) para metros (m).")
-    print("3. Metros (m) para quilômetros (km).")
-    print("4. Quilômetros (km) para metros (m).")
-    escolha = int(input("Escolha a opção: "))
 
-    if escolha == 1:
-        valor = float(input("Digite o valor: "))
-        resultado = valor * 100
-        print(f"{valor} m = {resultado:.2f} cm")
-    elif escolha == 2:
-        valor = float(input("Digite o valor: "))
-        resultado = valor / 100
-        print(f"{valor} cm = {resultado:.2f} m")
-    elif escolha == 3:
-        valor = float(input("Digite o valor: "))
-        resultado = valor / 1000
-        print(f"{valor} m = {resultado:.2f} km")
-    elif escolha == 4:
-        valor = float(input("Digite o valor: "))
-        resultado = valor * 1000
-        print(f"{valor} km = {resultado:.2f} m")
-    else:
-        print("Opção inválida.")
+def converter_comprimento():
+    teste = 0
+    while teste == 0:
+        print("Conversão de Comprimento:")
+        print("1. Metros (m) para centímetros (cm).")
+        print("2. Centímetros (cm) para metros (m).")
+        print("3. Metros (m) para quilômetros (km).")
+        print("4. Quilômetros (km) para metros (m).")
+        escolha = int(input("Escolha a opção: "))
+        print("")
+        if escolha == 1:
+            valor = float(input("Digite o valor: "))
+            resultado = valor * 100
+            print(f"{valor} m = {resultado:.2f} cm\n")
+            teste = 1
+        elif escolha == 2:
+            valor = float(input("Digite o valor: "))
+            resultado = valor / 100
+            print(f"{valor} cm = {resultado:.2f} m\n")
+            teste = 1
+        elif escolha == 3:
+            valor = float(input("Digite o valor: "))
+            resultado = valor / 1000
+            print(f"{valor} m = {resultado:.3f} km\n")
+            teste = 1
+        elif escolha == 4:
+            valor = float(input("Digite o valor: "))
+            resultado = valor * 1000
+            print(f"{valor} km = {resultado:.2f} m\n")
+            teste = 1
+        else:
+            print("Opção inválida. Tente novamente.\n")
 
 
 """ Menu de opções, o usuário escolhe:
@@ -86,6 +105,7 @@ def converter_comprimento():
 3: Para sair. 
 Qualquer opção diferente dessas será inválida. """
 
+
 def menu():
     while True:
         print("Escolha uma das opções abaixo:")
@@ -93,24 +113,31 @@ def menu():
         print("2. Operações com Vetores 2D")
         print("3. Sair")
         opcao = int(input("Escolha a categoria: "))
+        print("")
         if opcao == 1:
-            print("\nConverter:")
-            print("1. Velocidade")
-            print("2. Massa")
-            print("3. Comprimento")
-            print("4. Voltar\n")
-            opcao = int(input("Escolha a categoria: "))
-
-            if opcao == 1:
-                converter_velocidade()
-            elif opcao == 2:
-                converter_massa()
-            elif opcao == 3:
-                converter_comprimento()
-            elif opcao == 4:
-                continue
-            else:
-                print("Opção inválida. Tente novamente.")
+            verifica = 0
+            while (verifica == 0):
+                print("Converter:")
+                print("1. Velocidade")
+                print("2. Massa")
+                print("3. Comprimento")
+                print("4. Voltar\n")
+                opcao = int(input("Escolha a categoria: "))
+                print("")
+                if opcao == 1:
+                    verifica = 1
+                    converter_velocidade()
+                elif opcao == 2:
+                    verifica = 1
+                    converter_massa()
+                elif opcao == 3:
+                    verifica = 1
+                    converter_comprimento()
+                elif opcao == 4:
+                    print("")
+                    verifica = 1
+                else:
+                    print("Opção inválida. Tente novamente.\n")
         elif opcao == 2:
             print("=== Operações com Vetores 2D ===\n")
 
@@ -152,13 +179,13 @@ def menu():
             # Ponto de origem para todos os vetores (0, 0)
             origin_x, origin_y = 0, 0
 
-            #Determinar o limite máximo do gráfico para melhor visualização
-            #Consideramos o maior valor absoluto entre todas as coordenadas x e y
+            # Determinar o limite máximo do gráfico para melhor visualização
+            # Consideramos o maior valor absoluto entre todas as coordenadas x e y
             all_coords = np.concatenate([A, B, Soma, Subtracao])
             max_abs_coord = np.max(np.abs(all_coords))
             limit = max_abs_coord + 1.5  # Adiciona uma margem para visualização
 
-            fig, ax = plt.subplots(figsize=(8, 8))
+            fig, ax = plt.subplots(figsize=(6, 6))
 
             # Função para plotar um vetor específico
             def plot_vetor(vetor, color, label):
@@ -175,7 +202,7 @@ def menu():
             plot_vetor(B, 'red', f'Vetor B({B[0]}, {B[1]})')
             plot_vetor(Soma, 'green', f'Soma A+B({Soma[0]}, {Soma[1]})')
             plot_vetor(Subtracao, 'orange',
-                        f'Subtração A-B({Subtracao[0]}, {Subtracao[1]})')
+                       f'Subtração A-B({Subtracao[0]}, {Subtracao[1]})')
 
             # Configurações de Eixos
             ax.axhline(0, color='gray', linestyle='--', linewidth=0.5)
@@ -202,7 +229,5 @@ def menu():
         else:
             print("Opção inválida. Tente novamente.\n")
 
+
 menu()
-
-
-
