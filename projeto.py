@@ -80,14 +80,6 @@ def converter_comprimento():
         print("Opção inválida.")
 
 
-def plot_vector(vector, color, label):
-    ax.quiver(origin_x, origin_y, vector[0], vector[1],
-              angles='xy', scale_units='xy', scale=1,
-              color=color, width=0.008, label=label)
-
-    ax.text(vector[0] * 1.05, vector[1] * 1.05,
-            f'({vector[0]:.1f}, {vector[1]:.1f})', fontsize=9, color=color)
-
 """ Menu de opções, o usuário escolhe:
 1: Para realizar conversão de unidades;
 2: Para ealizar operações com vetores 2D ou
@@ -211,5 +203,6 @@ def menu():
             print("Opção inválida. Tente novamente.\n")
 
 menu()
+
 
 
