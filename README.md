@@ -8,7 +8,6 @@ FUNCIONALIDADES
 ------------------------------------------------------------
 
 1. CONVERSOR DE UNIDADES:
-
 O programa permite converter entre diferentes unidades de:
 - Velocidade: km/h ↔ m/s
 - Massa: kg ↔ g
@@ -20,7 +19,7 @@ O usuário pode inserir as componentes de dois vetores (A e B) e o programa real
 - Subtração (A - B)
 - Cálculo do módulo de cada vetor (‖A‖ e ‖B‖)
 
-3. PLOTAGEM GRÁFICA
+3. PLOTAGEM GRÁFICA:
 Os vetores e os resultados das operações são plotados no plano cartesiano, com:
 - Eixos X e Y centralizados
 - Escala proporcional
