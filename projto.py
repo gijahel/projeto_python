@@ -1,11 +1,15 @@
 import matplotlib.pyplot as plt  # type: ignore
 import numpy as np  # type: ignore
 
+""" Se o usuário selecionar conversão de velocidade, poderá escolher:
+1: converter quilômetros por hora (km/h) para metros por segundo (m/s) ou
+2: converter metros por segundo (m/s) para quilômetros por hora (km/h). 
+Qualquer opção diferente dessas será inválida. """
 
 def converter_velocidade():
     print("\nConversão de Velocidade:")
-    print("1. km/h para m/s")
-    print("2. m/s para km/h")
+    print("1. Quilômetros por hora (km/h) para metros por segundo (m/s).")
+    print("2. Metros por segundo (m/s) para quilômetros por hora (km/h).")
     escolha = int(input("Escolha a opção: "))
 
     if escolha == 1:
@@ -18,12 +22,16 @@ def converter_velocidade():
         print(f"{valor} m/s = {resultado:.2f} km/h")
     else:
         print("Opção inválida.")
-
+        
+""" Se o usuário escolher conversão de massa, poderá escolher:
+1: Converter quilograma (kg) para grama (g) ou
+2: Converter grama (g) para quilograma (kg).
+Qualquer opção diferente dessas será inválida. """
 
 def converter_massa():
     print("\nConversão de Massa:")
-    print("1. kg para g")
-    print("2. g para kg")
+    print("1. Quilograma (kg) para grama (g).")
+    print("2. Grama (g) para quilograma (kg).")
     escolha = int(input("Escolha a opção: "))
 
     if escolha == 1:
@@ -37,13 +45,19 @@ def converter_massa():
     else:
         print("Opção inválida.")
 
+""" Se o usuário escolher conversão de comprimente, poderá escolher:
+1: Converter quilograma (kg) para grama (g);
+2: Converter grama (g) para quilograma (kg);
+3: Converter metros (m) para quilômetros (km) ou
+4: Converter quilômetros (km) para metros (m).
+Qualquer opção diferente dessas será inválida. """
 
 def converter_comprimento():
     print("\nConversão de Comprimento:")
-    print("1. metros para centímetros")
-    print("2. centímetros para metros")
-    print("3. metros para quilômetros")
-    print("4. quilômetros para metros")
+    print("1. Metros (m) para centímetros (cm).")
+    print("2. Centímetros (cm) para metros (m).")
+    print("3. Metros (m) para quilômetros (km).")
+    print("4. Quilômetros (km) para metros (m).")
     escolha = int(input("Escolha a opção: "))
 
     if escolha == 1:
@@ -74,6 +88,11 @@ def plot_vector(vector, color, label):
     ax.text(vector[0] * 1.05, vector[1] * 1.05,
             f'({vector[0]:.1f}, {vector[1]:.1f})', fontsize=9, color=color)
 
+""" Menu de opções, o usuário escolhe:
+1: Realizar conversão de unidades;
+2: Realizar operações com vetores 2D ou
+3: Sair. 
+Qualquer opção diferente dessas será inválida. """
 
 def menu():
     while True:
@@ -150,20 +169,20 @@ def menu():
             fig, ax = plt.subplots(figsize=(8, 8))
 
             # Função para plotar um vetor específico
-            def plot_vector(vector, color, label):
+            def plot_vetor(vetor, color, label):
                 ax.quiver(origin_x, origin_y, vector[0], vector[1],
                           angles='xy', scale_units='xy', scale=1,
                           color=color, width=0.008, label=label)
 
                 # Adicionar o rótulo do ponto final do vetor
-                ax.text(vector[0] * 1.05, vector[1] * 1.05,
-                        f'({vector[0]:.1f}, {vector[1]:.1f})', fontsize=9, color=color)
+                ax.text(vetor[0] * 1.05, vetor[1] * 1.05,
+                        f'({vetor[0]:.1f}, {vetor[1]:.1f})', fontsize=9, color=color)
 
             # Plotagem dos vetores
-            plot_vector(A, 'blue', f'Vetor A({A[0]}, {A[1]})')
-            plot_vector(B, 'red', f'Vetor B({B[0]}, {B[1]})')
-            plot_vector(Soma, 'green', f'Soma A+B({Soma[0]}, {Soma[1]})')
-            plot_vector(Subtracao, 'orange',
+            plot_vetor(A, 'blue', f'Vetor A({A[0]}, {A[1]})')
+            plot_vetor(B, 'red', f'Vetor B({B[0]}, {B[1]})')
+            plot_vetor(Soma, 'green', f'Soma A+B({Soma[0]}, {Soma[1]})')
+            plot_vetor(Subtracao, 'orange',
                         f'Subtração A-B({Subtracao[0]}, {Subtracao[1]})')
 
             # Configurações de Eixos
@@ -190,6 +209,5 @@ def menu():
             break
         else:
             print("Opção inválida. Tente novamente.\n")
-
 
 menu()
