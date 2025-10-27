@@ -95,10 +95,12 @@ LICENÇA
 Este projeto é de uso educacional e foi desenvolvido para fins de aprendizado na disciplina de Física Computacional.
 
 ------------------------------------------------------------
-UNIVERSIDADE / CURSO / SEMESTRE
+UNIVERSIDADE / CURSO / SEMESTRE / DISCIPLINA
 ------------------------------------------------------------
 Universidade Estadual de Santa Cruz
 
-Disciplina de Física Computacional
+Ciência da Computação
 
 Semestre: 2025.2
+
+Disciplina: Física Computacional
