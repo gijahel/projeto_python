@@ -98,5 +98,7 @@ Este projeto é de uso educacional e foi desenvolvido para fins de aprendizado n
 UNIVERSIDADE / CURSO / SEMESTRE
 ------------------------------------------------------------
 Universidade Estadual de Santa Cruz
+
 Disciplina de Física Computacional
+
 Semestre: 2025.2
