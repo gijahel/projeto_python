@@ -160,8 +160,8 @@ def menu():
             # Ponto de origem para todos os vetores (0, 0)
             origin_x, origin_y = 0, 0
 
-            # Determinar o limite máximo do gráfico para melhor visualização
-            # Consideramos o maior valor absoluto entre todas as coordenadas x e y
+            #Determinar o limite máximo do gráfico para melhor visualização
+            #Consideramos o maior valor absoluto entre todas as coordenadas x e y
             all_coords = np.concatenate([A, B, Soma, Subtracao])
             max_abs_coord = np.max(np.abs(all_coords))
             limit = max_abs_coord + 1.5  # Adiciona uma margem para visualização
@@ -211,3 +211,4 @@ def menu():
             print("Opção inválida. Tente novamente.\n")
 
 menu()
+
