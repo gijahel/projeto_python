@@ -170,7 +170,7 @@ def menu():
 
             # Função para plotar um vetor específico
             def plot_vetor(vetor, color, label):
-                ax.quiver(origin_x, origin_y, vector[0], vector[1],
+                ax.quiver(origin_x, origin_y, vetor[0], vetor[1],
                           angles='xy', scale_units='xy', scale=1,
                           color=color, width=0.008, label=label)
 
@@ -211,4 +211,5 @@ def menu():
             print("Opção inválida. Tente novamente.\n")
 
 menu()
+
 
