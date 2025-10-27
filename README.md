@@ -7,13 +7,14 @@ O programa realiza conversão de unidades físicas e operações com vetores 2D,
 FUNCIONALIDADES
 ------------------------------------------------------------
 
-1. CONVERSOR DE UNIDADES
+1. CONVERSOR DE UNIDADES:
+
 O programa permite converter entre diferentes unidades de:
 - Velocidade: km/h ↔ m/s
 - Massa: kg ↔ g
 - Comprimento: m ↔ cm, cm ↔ m, m ↔ km, km ↔ m
 
-2. OPERAÇÕES COM VETORES 2D
+2. OPERAÇÕES COM VETORES 2D:
 O usuário pode inserir as componentes de dois vetores (A e B) e o programa realiza:
 - Soma (A + B)
 - Subtração (A - B)
