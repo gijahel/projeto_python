@@ -23,7 +23,7 @@ def converter_velocidade():
     else:
         print("Opção inválida.")
         
-""" Se o usuário escolher conversão de massa, poderá escolher:
+""" Se o usuário selecionar conversão de massa, poderá escolher:
 1: Converter quilograma (kg) para grama (g) ou
 2: Converter grama (g) para quilograma (kg).
 Qualquer opção diferente dessas será inválida. """
@@ -45,7 +45,7 @@ def converter_massa():
     else:
         print("Opção inválida.")
 
-""" Se o usuário escolher conversão de comprimente, poderá escolher:
+""" Se o usuário selecionar conversão de comprimente, poderá escolher:
 1: Converter quilograma (kg) para grama (g);
 2: Converter grama (g) para quilograma (kg);
 3: Converter metros (m) para quilômetros (km) ou
@@ -89,9 +89,9 @@ def plot_vector(vector, color, label):
             f'({vector[0]:.1f}, {vector[1]:.1f})', fontsize=9, color=color)
 
 """ Menu de opções, o usuário escolhe:
-1: Realizar conversão de unidades;
-2: Realizar operações com vetores 2D ou
-3: Sair. 
+1: Para realizar conversão de unidades;
+2: Para ealizar operações com vetores 2D ou
+3: Para sair. 
 Qualquer opção diferente dessas será inválida. """
 
 def menu():
