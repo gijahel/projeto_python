@@ -86,7 +86,7 @@ E abrirá uma janela gráfica com a representação dos vetores.
 AUTORES:
 ------------------------------------------------------------
 - Giselly Jahel
-- Thaíssa Sampaio
+- Thaissa Sampaio
 - Thalisson Souza
 
 ------------------------------------------------------------
